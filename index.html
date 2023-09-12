@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parque Ripagaina</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="d-flex justify-content-center pt-4 pb-4 d-none d-md-flex d-lg-flex">
+      <img src="images/logo.png">
+    </div>
+    <div class="header d-block d-md-none d-lg-none m-0">
+      <img src="images/header-mobile.jpg" class="background" alt="Background Image" />
+    </div>
+    <div class="header d-none d-md-block d-lg-block">
+      <img src="images/header.jpg" class="background" alt="Background Image" />
+      <div class="row justify-content-center">
+        <div class="d-flex justify-content-center position-absolute" style="top: 0;">
+          <h1 class="text-white fs-40em mt-4">
+            BIENVENIDO A TU NUEVO HOGAR
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="px-2 mt-5">
+      <div class="row">
+        <div class="col-md-12 col-12">
+          <h2 class="text-white fs-31em lh-sm bkg-orange p-2 text-center fw-500">
+            DESCUBRE TU NUEVO CASA
+          </h2>
+        </div>
+      </div>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="row video-detaills">
+              <div class="col-md-7 col-12 pl-0">
+                <div class="cover" style="background-image: url(https://img.youtube.com/vi/_2eaTvCcXzc/0.jpg); background-size: cover;background-position: center">
+                  <img role="button" src="images/play.png" onclick="openModal('_2eaTvCcXzc')" class="img-fluid background-image">
+                </div>
+              </div>
+              <div class="col-md-5 col-12">
+                <div class="p-3">
+                  <h3 class="fs-16em fw-bold">Bienvenido a<br> tu nuevo hogar 1</h3>
+                  <p class="fw-light">Vídeo tutorial acerca de las instalaciones que dispone su vivienda.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row video-detaills">
+              <div class="col-md-7 col-12 pl-0">
+                <div class="cover" style="background-image: url(https://img.youtube.com/vi/_2eaTvCcXzc/0.jpg); background-size: cover;background-position: center">
+                  <img role="button" src="images/play.png" onclick="openModal('_2eaTvCcXzc')" class="img-fluid background-image">
+                </div>
+              </div>
+              <div class="col-md-5 col-12">
+                <div class="p-3">
+                  <h3 class="fs-16em fw-bold">Bienvenido a<br> tu nuevo hogar 2</h3>
+                  <p class="fw-light">Vídeo tutorial acerca de las instalaciones que dispone su vivienda.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row video-detaills">
+              <div class="col-md-7 col-12 pl-0">
+                <div class="cover" style="background-image: url(https://img.youtube.com/vi/_2eaTvCcXzc/0.jpg); background-size: cover;background-position: center">
+                  <img role="button" src="images/play.png" onclick="openModal('_2eaTvCcXzc')" class="img-fluid background-image">
+                </div>
+              </div>
+              <div class="col-md-5 col-12">
+                <div class="p-3">
+                  <h3 class="fs-16em fw-bold">Bienvenido a<br> tu nuevo hogar 3</h3>
+                  <p class="fw-light">Vídeo tutorial acerca de las instalaciones que dispone su vivienda.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+          <img src="images/arrow-2.png">
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+          <img src="images/arrow-1.png">
+        </button>
+    </div>
+    <div class="bkg-orange text-white p-5 mb-5">
+      <h3 class="fw-bolder">MANUALES<br>DESCARGABLES</h3>
+      <ul class="mt-4 download-list">
+        <li><a href="pdf/vivienda.pdf" class="text-white text-decoration-none">Manual de uso y conservación de la vivienda</a><img class="ms-2 w-16px" src="images/icon.png"></li>
+        <li><a href="pdf/termostato.pdf" class="text-white text-decoration-none">Manual Termostato</a><img class="ms-2 w-16px" src="images/icon.png"></li>
+        <li><a href="pdf/pladur.pdf" class="text-white text-decoration-none">Manual Pladur</a><img class="ms-2 w-16px" src="images/icon.png"></li>
+        <li><a href="pdf/video-portero.pdf" class="text-white text-decoration-none">Manual Videoportero</a><img class="ms-2 w-16px" src="images/icon.png"></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container bg-dark d-flex justify-content-center pt-4 pb-4">
+    <img src="images/andia.png">
+  </div>
+  <div class="modal" tabindex="-1" id="myModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <iframe id="myIframe" width="840" height="471" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js" integrity="sha512-pax4MlgXjHEPfCwcJLQhigY7+N8rt6bVvWLFyUMuxShv170X53TRzGPmPkZmGBhk+jikR8WBM4yl7A9WMHHqvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  var myModalEl = document.getElementById('myModal');
+  myModalEl.addEventListener('hidden.bs.modal', function (event) {
+    document.getElementById('myIframe').src = '';
+  });
+  var openModal = (videoId) => {
+    if (window.innerWidth <= 768) {
+      window.open(`https://www.youtube.com/watch?v=${videoId}`, '_blank');
+      return;
+    }
+    var myModal = new bootstrap.Modal(document.getElementById('myModal'), {})
+    document.getElementById('myIframe').src = `https://www.youtube.com/embed/${videoId}`;
+    myModal.show();
+  }
+</script>
+</html>

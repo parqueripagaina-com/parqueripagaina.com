@@ -1,0 +1,123 @@
+$orange: #F97E0C;
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.bkg-orange {
+  background-color: $orange;
+}
+
+.color-orange {
+  color: $orange;
+}
+
+.header {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  h1 {
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 3px 33px 250px #000;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+}
+
+.header img.background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.download-list {
+  padding-inline-start: 20px;
+}
+
+.w-16px {
+  width: 16px;
+}
+
+.image-container {
+  position: relative;
+}
+
+.overlay-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.video-detaills {
+  border: 1px solid #000;
+  margin: 25px auto 35px auto;
+  width: 99%;
+  h3 {
+    border-bottom: 5px solid $orange;
+    padding-bottom: 8px;
+  }
+}
+
+.col-md-7.pl-0 {
+  padding-left: 0;
+}
+
+// font-size
+@for $i from 0 through 9 {
+  @for $n from 0 through 9 {
+    $size: $i + ($n / 10);
+    .fs-#{$i}#{$n}em {
+      font-size: calc(#{$size}em);
+    }
+  }
+}
+
+// font-weight
+@for $i from 1 through 9 {
+  .fw-#{$i}00 {
+    font-weight: #{$i}00;
+  }
+}
+
+// min-heigth
+$sizes: 3em,14em;
+@each $size in $sizes {
+  .minh-#{$size} {
+    min-height: $size;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-md-center {
+    text-align: center;
+  }
+  .logotipo {
+    max-width: 40%;
+  }
+  .fs-31em {
+    font-size: 1.5em;
+  }
+  .pt-4 {
+    padding-top: 0.5rem!important;
+  }
+  .border-custom {
+    border-left: 1em solid $orange;
+    border-right: 4em solid $orange;
+    padding: 0 6px;
+  }
+  .minh-34em {
+    min-height: auto;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+  .row.video-detaills {
+    .col-md-7.col-12.pl-0 {
+      padding-right: 0;
+    }
+  }
+}
