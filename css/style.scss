@@ -54,10 +54,25 @@ body {
 .video-detaills {
   border: 1px solid #000;
   margin: 25px auto 35px auto;
-  width: 99%;
+  width: 75%;
   h3 {
     border-bottom: 5px solid $orange;
     padding-bottom: 8px;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  a.page-link {
+    border-radius: 50% !important;
+    border: 1px solid $orange;
+    color: #000;
+    margin: 0 5px;
+    &.active {
+      background-color: $orange;
+      color: #FFF;
+    }
   }
 }
 
